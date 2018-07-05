@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w7F-2e-6oM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w7F-2e-6oM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -71,7 +71,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Review List" id="meH-ua-mQt">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="88U-N5-pfb"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="88U-N5-pfb">
+                            <connections>
+                                <segue destination="6Fc-Le-9Iq" kind="show" id="g37-eh-AXX"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ha4-Z8-dI3" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -97,7 +101,6 @@
                                 <rect key="frame" x="70" y="242" width="240" height="362"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -116,7 +119,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.76485430629999995" green="0.93464467009999996" blue="0.82639132039999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.68187726563138562" green="0.93464467009999996" blue="0.92575574403653116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Yzu-Fu-xE6"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="ngj-yI-DmH">
@@ -469,4 +472,7 @@
             <point key="canvasLocation" x="433" y="-484"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="g37-eh-AXX"/>
+    </inferredMetricsTieBreakers>
 </document>
